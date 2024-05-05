@@ -96,7 +96,8 @@ class LlamaCppModel:
             'tensor_split': tensor_split_list,
             'rope_freq_scale': 1.0 / shared.args.compress_pos_emb,
             'offload_kqv': not shared.args.no_offload_kqv,
-            'split_mode': 1 if not shared.args.row_split else 2
+            'split_mode': 1 if not shared.args.row_split else 2,
+            'flash_attn': not shared.args.no_flash_attn,
         }
 
         result.model = Llama(**params)

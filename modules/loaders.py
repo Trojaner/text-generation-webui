@@ -48,6 +48,7 @@ loaders_and_params = OrderedDict({
         'tensorcores',
         'streaming_llm',
         'attention_sink_size',
+        'no_flash_attn',
     ],
     'llamacpp_HF': [
         'n_ctx',
@@ -74,6 +75,7 @@ loaders_and_params = OrderedDict({
         'streaming_llm',
         'attention_sink_size',
         'llamacpp_HF_info',
+        'no_flash_attn',
     ],
     'ExLlamav2_HF': [
         'gpu_split',
